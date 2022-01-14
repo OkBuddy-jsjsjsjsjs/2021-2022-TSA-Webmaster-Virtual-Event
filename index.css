@@ -1,1 +1,474 @@
+ body {
+      margin: 0;
+      background-color: #008282;
+    }
 
+    #win95popup {
+      background-color: #c3c3c3;
+      border-radius: 1px;
+      border-width: 4px;
+      border-style: outset;
+      border-top-color: white;
+      border-left-color: white;
+      border-bottom-color: black;
+      border-right-color: black;
+      width: 50vw;
+      height: 80vh;
+      margin-top: 7vh;
+      margin-left: calc(25vw - 214px);
+    }
+
+    #win95popup button{
+      font-family: 'ms-sans-serif-pixel';
+      border-style: outset;
+      border-top-color: white;
+      border-left-color: white;
+      border-bottom-color: black;
+      border-right-color: black;
+      color: black;
+      background-color: #c3c3c3;
+      float: right;
+      margin-right: 4px;
+      position: relative;
+      padding-top: 3px;
+    }
+
+    #win95popup button:hover{
+      border-style: inset;
+      border-top-color: black;
+      border-left-color: black;
+      border-bottom-color: white;
+      border-right-color: white;
+      cursor: pointer;
+    }
+
+    #win95popup h1 {
+      color: black;
+      font-family: 'ms-sans-serif-pixel';
+      font-size: 45px;
+      margin-left: 2vw;
+    }
+
+    #win95popup p.body {
+      color: black;
+      font-family: 'ms-sans-serif-pixel';
+      font-size: 16px;
+      margin-left: 2vw;
+    }
+
+    #win95popuptab {
+      display: inline-block;
+      background-color: #060082;
+      width: calc(50vw - 4px);
+      height: 28px;
+      padding-left: 4px;
+      padding-bottom: 2px;
+      z-index: 10;
+    }
+
+    #win95popuptab:hover {
+      cursor: all-scroll;
+    }
+
+    @font-face {
+      font-family: 'ms-sans-serif-pixel';
+      src: url('ms-sans-serif-pixel.ttf') format('truetype');
+      font-weight: normal;
+      font-style: none;
+    }
+
+    #win95popuptab p {
+      color: white;
+      margin-top: 7px;
+      font-family: 'ms-sans-serif-pixel';
+    }
+
+    .navbar {
+      width: inherit;
+      border-style: outset;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom-color: white;
+      border-bottom-width: 1px;
+      background-color: #c3c3c3;
+      margin-top: -16px;
+      height: 7vh;
+      display: inline-block, flex;
+      flex-direction: row;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .navbar button.p {
+      color: black;
+      text-align: center;
+      font-family: 'ms-sans-serif-pixel';
+      font-size: 14px;
+      padding-top: 16px;
+      background-color: #c3c3c3;
+      height: 7vh;
+      border-style: outset;
+      margin: none;
+    }
+
+    .navbar button.p:hover {
+      border-style: inset;
+      border-top-color: black;
+      border-left-color: black;
+      border-bottom-color: white;
+      border-right-color: white;
+      cursor: pointer;
+    }
+
+    .navbar button.sign {
+      float: right;
+      color: black;
+      text-align: center;
+      font-family: 'ms-sans-serif-pixel';
+      font-size: 14px;
+      padding-top: 16px;
+      background-color: #c3c3c3;
+      height: 7vh;
+      border-style: outset;
+      margin: none;
+    }
+
+    .navbar button.sign:hover {
+      border-style: inset;
+      border-top-color: black;
+      border-left-color: black;
+      border-bottom-color: white;
+      border-right-color: white;
+      cursor: pointer;
+    }
+
+    .columnflex {
+      display: flex;
+      flex-direction: column;
+      background: none;
+      height: 50vw;
+    }
+
+    .rowflex {
+      display: flex;
+      flex-direction: row;
+      background: none;
+      width: 100vw;
+    }
+
+    figcaption.shogipiece {
+      font-family: 'ms-sans-serif-pixel';
+      margin-left: 64px;
+      position: absolute;
+      color: white;
+    }
+
+    #pawn1bottom {
+      animation: pawn1 1.2s linear alternate infinite;
+      animation-delay: 0s;
+  }
+
+    @keyframes pawn1 {
+      from {
+        transform: translateY(0%);
+    }
+
+      to {
+        transform: translateY(-10.6%);
+    }
+  }
+
+
+    #pawn2bottom {
+      animation: pawn2 1.2s linear alternate infinite;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes pawn2 {
+      from {
+        transform: translateY(0%);
+    }
+
+      to {
+        transform: translateY(-10.6%);
+    }
+  }
+
+    #pawn3bottom {
+      animation: pawn3 1.2s linear alternate infinite;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes pawn3 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #pawn4bottom {
+      animation: pawn4 1.2s linear alternate infinite;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes pawn4 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #pawn5bottom {
+      animation: pawn5 1.2s linear alternate infinite;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes pawn5 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #pawn6bottom {
+      animation: pawn6 1.2s linear alternate infinite;
+      animation-delay: 1s;
+    }
+
+    @keyframes pawn6 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #pawn7bottom {
+      animation: pawn7 1.2s linear alternate infinite;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes pawn7 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #pawn8bottom {
+      animation: pawn8 1.2s linear alternate infinite;
+      animation-delay: 1.4s;
+    }
+
+    @keyframes pawn8 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #pawn9bottom {
+      animation: pawn9 1.2s linear alternate infinite;
+      animation-delay: 1.6s;
+    }
+
+    @keyframes pawn9 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #bishop2bottom {
+      animation: bishop2 1.2s linear alternate infinite;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes bishop2 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #rook8bottom {
+      animation: rook8 1.2s linear alternate infinite;
+      animation-delay: 1.4s;
+    }
+
+    @keyframes rook8 {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #lance1bottom {
+      animation: lance1b 1.2s linear alternate infinite;
+      animation-delay: 0s;
+    }
+
+    @keyframes lance1b {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #lance9bottom {
+      animation: lance9b 1.2s linear alternate infinite;
+      animation-delay: 1.6s;
+    }
+
+    @keyframes lance9b {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #knight2bottom {
+      animation: knight2b 1.2s linear alternate infinite;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes knight2b {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #silver3bottom {
+      animation: silver3b 1.2s linear alternate infinite;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes silver3b{
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #gold4bottom {
+      animation: gold4b 1.2s linear alternate infinite;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes gold4b {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #king5bottom {
+      animation: kingb 1.2s linear alternate infinite;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes kingb {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #gold6bottom {
+      animation: gold6b 1.2s linear alternate infinite;
+      animation-delay: 1s;
+    }
+
+    @keyframes gold6b {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #silver7bottom {
+      animation: silver7b 1.2s linear alternate infinite;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes silver7b {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    #knight8bottom {
+      animation: knight8b 1.2s linear alternate infinite;
+      animation-delay: 1.4s;
+    }
+
+    @keyframes knight8b {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-10.6%);
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        #win95popup h1 {
+          font-size: 30px;
+        }
+
+    }
