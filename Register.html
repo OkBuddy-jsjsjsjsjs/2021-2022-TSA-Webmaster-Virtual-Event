@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html lang = "en">
-  <head>
-    <title>Register</title>
-    <link rel = "stylesheet" href = "index.css">
-  </head>
-  <body>
-    <div class = "navbar">
-      <button href = "index.html" class = "p">Home</button>
-      <button href = "" class = "p">Play</button>
-      <button href = "" class = "p">Resources</button>
-      <button href = "" class = "p">Contact Us</button>
-      <button href = "register.html" class = "sign">Sign In</button>
-      <button style = "margin-right: 10px;" href = "" class = "sign">Register</button>
+<head>
+
+  <title>CyberShogi 2022</title>
+  
+  <link rel = "shortcut icon" href = "ShogiKingIcon.svg">
+  
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src = "index.js"></script>
+
+  <link rel = "stylesheet" href = "register.css">
+</head>
+<div class = "navbar">
+    <center><button class = "p"><p id = "clock"></p></button></center>
+</div>
+
+  <div class = "rowflex">
+  <div id = "iconcolumn">
+  <figure>
+    <a href = "">
+      <img src = "PixelShogiIcon.png" class="iconpic">
+      <figcaption class = "icons">Play Shogi</figcaption>
+    </a>
+  </figure>
+  <figure>
+    <a href = "">
+      <img src = "output-onlinepngtools.png" class="iconpic">
+      <figcaption class = "icons">Contact Us</figcaption>
+    </a>
+  </figure>
+  <figure>
+    <a href = "">
+      <img src = "Windows95ResourcesIcon.png" class="iconpic">
+      <figcaption class = "icons">Resources</figcaption>
+    </a>
+  </figure>
+  <figure >
+    <a href = "register.html">
+      <img src = "RegisterIcon.png" class="iconpic">
+      <figcaption class = "icons">Register</figcaption>
+    </a>
+  </figure>
+  </div>
+    <div id = "win95popup">
+      <div id = "win95popuptab">
+        <p>Welcome</p>
+        <button id = "close" style = "margin-top: -37px;">X</button>
+      </div>
+      <h1>Welcome to CyberShogi</h1>
+      <p class = "body">CyberShogi is a virtual shogi tournament that will be hosted on the 15th of March, 2022.</p>
+      <h1>Register</h1>
+      <div class="alert">Message Sent</div>
+      <form id="regform" action="" method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="username">Username</label><br>
+        <input type="text" id="username" username="username" required><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" email="email" required><br>
+        <label for="password">Password</label><br>
+        <input type="text" id="password" password="password" required><br>
+        <label for="repassword">Retype Password</label><br>
+        <input type="text" id="repassword" repassword="repassword" required><br><br>
+        <button type="submit" sendMessage() class = "regbutton">Register</button>
+      </form>
+
+
+
     </div>
-  </body>
+  </div>
+</body>
 </html>

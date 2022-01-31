@@ -13,3 +13,8 @@
 
     document.getElementById("clock").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s:" + " Until Event"})
+
+// Registration
+
+    document.querySelector(".alert").style.display = "block";
+    setTimeout(function() {document.querySelector(".alert").style.display = 'none';}, 7000);
