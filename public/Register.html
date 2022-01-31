@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
+<script>
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "firebase/app";
+  import { getAnalytics } from "firebase/analytics";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBHWI-peAX4h9garTvInmERXHeYI6vHhMY",
+    authDomain: "shogidatabase.firebaseapp.com",
+    databaseURL: "https://shogidatabase-default-rtdb.firebaseio.com",
+    projectId: "shogidatabase",
+    storageBucket: "shogidatabase.appspot.com",
+    messagingSenderId: "1028861476920",
+    appId: "1:1028861476920:web:1cd9b30aab2583d712a6cd",
+    measurementId: "G-NJJ9JXGL88"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+
 
   <title>CyberShogi 2022</title>
   
@@ -46,11 +71,9 @@
   </div>
     <div id = "win95popup">
       <div id = "win95popuptab">
-        <p>Welcome</p>
+        <p>Register</p>
         <button id = "close" style = "margin-top: -37px;">X</button>
       </div>
-      <h1>Welcome to CyberShogi</h1>
-      <p class = "body">CyberShogi is a virtual shogi tournament that will be hosted on the 15th of March, 2022.</p>
       <h1>Register</h1>
       <div class="alert">Message Sent</div>
       <form id="regform" action="" method="POST">
