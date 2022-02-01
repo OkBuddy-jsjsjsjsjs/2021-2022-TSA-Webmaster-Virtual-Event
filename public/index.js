@@ -17,33 +17,42 @@
 // Registration
 
 // Import the functions you need from the SDKs you need
+const firebaseConfig = {
+    apiKey: "AIzaSyBHWI-peAX4h9garTvInmERXHeYI6vHhMY",
+    authDomain: "shogidatabase.firebaseapp.com",
+    databaseURL: "https://shogidatabase-default-rtdb.firebaseio.com",
+    projectId: "shogidatabase",
+    storageBucket: "shogidatabase.appspot.com",
+    messagingSenderId: "1028861476920",
+    appId: "1:1028861476920:web:1cd9b30aab2583d712a6cd",
+    measurementId: "G-NJJ9JXGL88"
+  };
+  
+  // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import { getDatabase } from 'firebase/database';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBHWI-peAX4h9garTvInmERXHeYI6vHhMY",
-  authDomain: "shogidatabase.firebaseapp.com",
-  databaseURL: "https://shogidatabase-default-rtdb.firebaseio.com",
-  projectId: "shogidatabase",
-  storageBucket: "shogidatabase.appspot.com",
-  messagingSenderId: "1028861476920",
-  appId: "1:1028861476920:web:1cd9b30aab2583d712a6cd",
-  measurementId: "G-NJJ9JXGL88"
-};
 
-// Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
 
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
-    var repassword = document.getElementById("repassword");
+    const form = document.querySelector("#regform");
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = form['email'].value;
+        const password = form['password'].value;
+        console.log(email, password);
+
+    })
+
+   
 
 
     const auth = getAuth();

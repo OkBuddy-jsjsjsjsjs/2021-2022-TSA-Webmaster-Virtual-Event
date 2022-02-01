@@ -13,6 +13,7 @@
 
     document.getElementById("clock").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s:" + " Until Event"})
+<<<<<<< HEAD
 
 // Registration
 
@@ -60,3 +61,5 @@ const analytics = getAnalytics(app);
 
     document.querySelector(".alert").style.display = "block";
     setTimeout(function() {document.querySelector(".alert").style.display = 'none';}, 7000);
+=======
+>>>>>>> parent of dc83888 (adding firebase pt 1)

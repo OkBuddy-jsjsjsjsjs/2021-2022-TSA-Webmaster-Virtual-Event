@@ -171,14 +171,6 @@ body {
     margin-left: 6vw;
   }
 
-  .alert {
-      font-family: 'ms-sans-serif-pixel';
-      margin-left: 15vw;
-      float: center;
-      font-size: 20px;
-      font-weight: bold;
-      display:none;
-  }
 
 #iconcolumn {
 height: 50vh;
@@ -213,7 +205,7 @@ height: auto;
         background-color: #cfcfcf;
     }
 
-    .regbutton {
+    #regbutton {
         margin-left: 5vw !important;
         float: inherit !important;
         font-family: 'ms-sans-serif-pixel';
