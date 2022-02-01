@@ -5,10 +5,9 @@
     <div class = "navbar">
       <a href = "index.html"><button class = "p">Home</button></a>
       <a href='PlayShogiPage.html'><button class = "p">Play</button></a>
-      <a href="ForJudges"><button class = "p">Resources</button></a>
+      <a href="ForJudges.html"><button class = "p">Resources</button></a>
       <a href="ContactUs.html"><button class = "p">Contact Us</button></a>
       <a href="register.html"><button style = "margin-right: 10px;" class = "sign">Register</button></a>
-      <a href="signin.html"><button style = "margin-right: 10px;" class = "sign">Sign In</button></a>
     </div>
 
     <style>
@@ -95,7 +94,7 @@
       .sexybox {
         background-color: #c0c0c0;
         width: 45vw;
-        height: 60vh;
+        height: fit-content;
         margin-left: 27.5vw;
         margin-top: calc(20vh - 5px);
         padding-top: 10px;
@@ -112,6 +111,22 @@
         width: calc(45vw);
         margin-top: -10px;
         padding-bottom: 4.5px;
+      }
+
+      .sexyboxtab button{
+      font-family: 'ms-sans-serif-pixel';
+      border-style: outset;
+      border-top-color: white;
+      border-left-color: white;
+      border-bottom-color: black;
+      border-right-color: black;
+      color: black;
+      background-color: #c3c3c3;
+      float: right;
+      margin-right: 1vw;
+      margin-top: 4px;
+      position: relative;
+      padding-top: 4px;
       }
 
       .sexyboxtab:hover {
@@ -152,17 +167,21 @@
       textarea {
         width: 37.5vw;
         height: 30vh;
+        
       }
 
       input {
         width: 25vw;
+        
       }
 
     </style>
   </head>
 <body>
   <div class = "sexybox">
-    <div class = "sexyboxtab"></div>
+    <div class = "sexyboxtab">
+      <button id = "close">X</button>
+    </div>
     <center>
       <h1 class = "cock">Contact Us</h1>
 <form action="https://formspree.io/f/mzboerrr" method="POST">

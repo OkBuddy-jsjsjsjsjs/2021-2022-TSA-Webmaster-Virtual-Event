@@ -218,10 +218,12 @@
       #win95popup h1{
         font-size: calc(45px - 3vw)
       }
+
       #win95popuptab{
         width: calc(75vw - 8px);
         margin: auto;
       }
+      
       #board {
         display:none;
       }
@@ -255,6 +257,8 @@
 
     #regform {
       margin-left: 10vw;
+      padding-right: 16vw;
+      padding-bottom: 5vh;
   
       }
   
