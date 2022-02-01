@@ -174,7 +174,7 @@
     }
 
 #iconcolumn {
-  height: 50vh;
+  height: 20vh;
   width : auto;
   display: grid;
   grid-template-columns: 1;
