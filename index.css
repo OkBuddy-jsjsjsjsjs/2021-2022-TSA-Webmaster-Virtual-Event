@@ -163,11 +163,18 @@
 
     figcaption.icons {
       font-family: 'ms-sans-serif-pixel';
-      margin-left: 8vw;
+      text-decoration:underline;
+      text-decoration-color: #008282;
+      border: none;
+      margin-left: 6vw;
+      text-align: center;
       position: inherit;
+      align-items: center;
       color: white;
+      background-color: inherit;
     }
     .iconpic {
+      text-decoration: none;
       width : 10vh;
       height : auto; 
       margin-left: 6vw;
@@ -232,7 +239,7 @@
         justify-content: space-evenly;
         justify-items: center;
         align-items: center;
-        margin-top: 50vh;
+        margin-top: 45vh;
         margin-left: auto;
         margin-right: auto;
         height: 70vh;
