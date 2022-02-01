@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    background-color: #008282;
+  }
+
+  #win95popup {
+    background-color: #c3c3c3;
+    border-radius: 1px;
+    border-width: 4px;
+    border-style: outset;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: black;
+    border-right-color: black;
+    width: auto;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+  }
+
+  #win95popup button{
+    font-family: 'ms-sans-serif-pixel';
+    border-style: outset;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: black;
+    border-right-color: black;
+    color: black;
+    background-color: #c3c3c3;
+    float: right;
+    margin-right: 1vw;
+    position: relative;
+    padding-top: 3px;
+  }
+
+  #win95popup button:hover{
+    border-style: inset;
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: white;
+    border-right-color: white;
+    cursor: pointer;
+  }
+
+  #win95popup h1 {
+    color: black;
+    font-family: 'ms-sans-serif-pixel';
+    font-size: 45px;
+    margin-left: 2vw;
+  }
+
+  #win95popup p.body {
+    color: black;
+    font-family: 'ms-sans-serif-pixel';
+    font-size: 16px;
+    margin-left: 2vw;
+  }
+
+  #win95popuptab {
+    display: inline-block;
+    background-color: #060082;
+    width: calc(50vw - 4px);
+    height: 28px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    z-index: 10;
+  }
+
+  #win95popuptab:hover {
+    cursor: all-scroll;
+  }
+
+  @font-face {
+    font-family: 'ms-sans-serif-pixel';
+    src: url('ms-sans-serif-pixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: none;
+  }
+
+  #win95popuptab p {
+    color: white;
+    margin-top: 7px;
+    font-family: 'ms-sans-serif-pixel';
+  }
+
+  .navbar {
+    width: inherit;
+    border-style: outset;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    background-color: #c3c3c3;
+    margin-top: 0vh;
+    height: 7vh;
+    display: inline-block, flex;
+    flex-direction: row;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .navbar button.p {
+    color: black;
+    text-align: center;
+    font-family: 'ms-sans-serif-pixel';
+    font-size: calc(14px);
+    padding-top: inherit;
+    background-color: #c3c3c3;
+    height: 7vh;
+    border-style: outset;
+    margin: none;
+  }
+
+  .navbar button.p:hover {
+    border-style: inset;
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: white;
+    border-right-color: white;
+    cursor: pointer;
+  }
+
+  .navbar button.sign {
+    float: right;
+    color: black;
+    text-align: center;
+    font-family: 'ms-sans-serif-pixel';
+    font-size: calc(14px + 1vh);
+    padding-top: inherit;
+    background-color: #c3c3c3;
+    height: 5vh;
+    border-style: outset;
+    margin: none;
+  }
+
+  .navbar button.sign:hover {
+    border-style: inset;
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: white;
+    border-right-color: white;
+    cursor: pointer;
+  }
+
+  .columnflex {
+    display: grid;
+    flex-direction: grid;
+    background: none;
+    height: 5vh;
+  }
+
+  .rowflex {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    height:fit-content
+  }
+
+  figcaption.icons {
+    font-family: 'ms-sans-serif-pixel';
+    margin-left: 8vw;
+    position: inherit;
+    color: white;
+  }
+  .iconpic {
+    width : 10vh;
+    height : auto; 
+    margin-left: 6vw;
+  }
+
+
+#iconcolumn {
+height: 50vh;
+width : auto;
+display: grid;
+grid-template-columns: 1;
+grid-template-rows: repeat(5, 10vh);
+grid-gap: 10vh;
+}
+
+#board {
+margin-left:5vw; 
+margin-right:5vw;
+margin-top: 0vh;
+margin-bottom: 5vh;
+width: 50vw;
+height: auto; 
+}
+
+    #regform {
+    margin-left: 10vw;
+
+    }
+
+    #regform label {
+        margin-left: 5vw;
+        font-family: 'ms-sans-serif-pixel';
+    }
+
+    #regform input{
+        margin-left: 5vw;
+        background-color: #cfcfcf;
+    }
+
+    #regbutton {
+        margin-left: 5vw !important;
+        float: inherit !important;
+        font-family: 'ms-sans-serif-pixel';
+    }
+
+
+  @media only screen and (max-width: 800px) {
+
+    #win95popup {
+      height: 15vh;
+      margin-left: -50vw;
+      width: 75vw
+    }
+    #win95popup h1{
+      font-size: calc(45px - 1vh)
+    }
+    #win95popuptab{
+      width: calc(75vw - 4px);
+      margin-right:2px;
+    }
+    #board {
+      display:none;
+    }
+    
+    #iconcolumn {
+      margin-top: 25vh;
+      height: 90vh;
+      width : auto;
+      display: grid;
+      grid-template-columns: repeat(2, 10vh);
+      grid-template-rows: repeat(2, 10vh);
+      grid-gap: 10vh;
+    }
+  }

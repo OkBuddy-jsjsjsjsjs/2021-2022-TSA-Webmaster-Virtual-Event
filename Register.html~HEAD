@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang = "en">
+<<<<<<< HEAD:public/Register.html
 <head>
+  <!-- <script src='https://www.gstatic.com/firebasejs/9.6.5/firebase.js'></script> -->
   <title>CyberShogi 2022</title>
   
   <link rel = "shortcut icon" href = "ShogiKingIcon.svg">
@@ -8,12 +10,7 @@
   <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
   
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script>
-
-
-    
-  </script>
-  <script defer src = "index.js"></script>
+  <script src = "index.js"></script>
 
   <link rel = "stylesheet" href = "register.css">
 </head>
@@ -57,17 +54,36 @@
       <p class = "body">CyberShogi is a virtual shogi tournament that will be hosted on the 15th of March, 2022.</p>
       <h1>Register</h1>
       <div class="alert">Message Sent</div>
-      <form id="regform">
+      <form id="regform" action="" method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="username">Username</label><br>
+        <input type="text" id="username" username="username" required><br>
         <label for="email">Email</label><br>
-        <input type="text" id="email" required><br>
+        <input type="text" id="email" email="email" required><br>
         <label for="password">Password</label><br>
-        <input type="text" id="password" required><br><br>
-        <input type="submit" value="Register">
+        <input type="text" id="password" password="password" required><br>
+        <label for="repassword">Retype Password</label><br>
+        <input type="text" id="repassword" repassword="repassword" required><br><br>
+        <button type="submit" sendMessage() class = "regbutton">Register</button>
       </form>
 
 
 
+=======
+  <head>
+    <title>Register</title>
+    <link rel = "stylesheet" href = "index.css">
+  </head>
+  <body>
+    <div class = "navbar">
+      <button href = "index.html" class = "p">Home</button>
+      <button href = "" class = "p">Play</button>
+      <button href = "" class = "p">Resources</button>
+      <button href = "" class = "p">Contact Us</button>
+      <button href = "register.html" class = "sign">Sign In</button>
+      <button style = "margin-right: 10px;" href = "" class = "sign">Register</button>
+>>>>>>> parent of dc83888 (adding firebase pt 1):Register.html
     </div>
-  </div>
-</body>
+  </body>
 </html>
