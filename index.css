@@ -209,11 +209,11 @@
       }
 
       #win95popup {
-        height: 20vh;
         margin-left: 12.5vw;
         min-height: 200px;
         position: absolute;
-        width: 75vw
+        width: 75vw;
+        height: fit-content;
       }
       #win95popup h1{
         font-size: calc(45px - 3vw)
@@ -252,6 +252,35 @@
     
 
     }
+
+    #regform {
+      margin-left: 10vw;
+  
+      }
+  
+      #regform label {
+          margin-left: 5vw;
+          font-family: 'ms-sans-serif-pixel';
+      }
+  
+      #regform input{
+          margin-left: 5vw;
+          background-color: #cfcfcf;
+          font-family: 'ms-sans-serif-pixel';
+          margin-bottom: 0.5vh;
+      }
+  
+      #regbutton {
+          margin-left: 5vw !important;
+          float: inherit !important;
+          font-family: 'ms-sans-serif-pixel';
+      }
+
+      #submitted {
+        display:none;
+      }
+
+
 /* Key Frames */
 
   

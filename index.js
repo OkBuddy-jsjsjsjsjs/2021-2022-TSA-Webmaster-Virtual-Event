@@ -13,3 +13,8 @@
 
     document.getElementById("clock").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s:" + " Until Event"})
+
+function submitForm() {
+    document.getElementById('regform').style.display = "none";
+    document.getElementById('submitted').style.display = 'block';
+}

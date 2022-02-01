@@ -1,7 +1,84 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <div class = "navbar">
+      <a href = "index.html"><button class = "p">Home</button></a>
+      <a href='PlayShogiPage.html'><button class = "p">Play</button></a>
+      <a href="ForJudges"><button class = "p">Resources</button></a>
+      <a href="ContactUs.html"><button class = "p">Contact Us</button></a>
+      <a href="register.html"><button style = "margin-right: 10px;" class = "sign">Register</button></a>
+      <a href="signin.html"><button style = "margin-right: 10px;" class = "sign">Sign In</button></a>
+    </div>
+
     <style>
+
+.navbar {
+      width: 100%;
+      border-style: outset;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom-color: white;
+      border-bottom-width: 1px;
+      background-color: #c3c3c3;
+      margin-top: 0vh;
+      height: 5vh;
+      
+      display: inline-block, flex;
+      flex-direction: row;
+      padding-left: 0vw;
+      padding-right: 0vw;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:black;
+    }
+
+    .navbar button.p {
+      color: black;
+      text-align: center;
+      font-family: 'ms-sans-serif-pixel';
+      font-size: calc(14px+2vw);
+      padding-top: inherit;
+      background-color: #c3c3c3;
+      height: 5vh;
+      width: 10vw;
+      border-style: outset;
+      margin: none;
+    }
+
+    .navbar button.p:hover {
+      border-style: inset;
+      border-top-color: black;
+      border-left-color: black;
+      border-bottom-color: white;
+      border-right-color: white;
+      cursor: pointer;
+    }
+
+    .navbar button.sign {
+      float: right;
+      color: black;
+      text-align: center;
+      font-family: 'ms-sans-serif-pixel';
+      font-size: calc(14px + 1vh);
+      padding-top: inherit;
+      background-color: #c3c3c3;
+      height: 5vh;
+      border-style: outset;
+      margin: none;
+    }
+
+    .navbar button.sign:hover {
+      border-style: inset;
+      border-top-color: black;
+      border-left-color: black;
+      border-bottom-color: white;
+      border-right-color: white;
+      cursor: pointer;
+    }
 
       body {
         background-color: #008282;
