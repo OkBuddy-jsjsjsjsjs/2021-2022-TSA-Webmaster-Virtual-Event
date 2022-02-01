@@ -145,8 +145,8 @@
     }
 
     .columnflex {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      flex-direction: grid;
       background: none;
       height: 5vh;
     }
@@ -156,42 +156,72 @@
       flex-direction: row;
       background: none;
       width: auto;
+      height:fit-content
     }
 
     figcaption.icons {
       font-family: 'ms-sans-serif-pixel';
-      margin-left: 5vh;
+      margin-left: 8vw;
       position: inherit;
       color: white;
     }
     .iconpic {
-      width : 10vw;
+      width : 10vh;
       height : auto; 
-      margin-top: 10vh;
-      margin-bottom: auto;
-      margin-right: auto; 
-      margin-left: 5vh;
+      margin-left: 6vw;
     }
 
+#iconcolumn {
+  height: 50vh;
+  width : auto;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(5, 10vh);
+  grid-gap: 10vh;
+}
 
 #board {
   margin-left:5vw; 
   margin-right:5vw;
   margin-top: 0vh;
   margin-bottom: 5vh;
-  width: auto;
+  width: 50vw;
   height: auto; 
 }
 
     @media only screen and (max-width: 800px) {
 
-      #win95popup h1 {
-        font-size: 30px;
+      #win95popup {
+        height: 15vh;
+        margin-left: -50vw;
+        width: 75vw
       }
+      #win95popup h1{
+        font-size: calc(45px - 1vh)
+      }
+      #win95popuptab{
+        width: calc(75vw - 4px);
+        margin-right:2px;
+      }
+      #board {
+        display:none;
+      }
+      
+      #iconcolumn {
+        margin-top: 25vh;
+        height: 90vh;
+        width : auto;
+        display: grid;
+        grid-template-columns: repeat(2, 10vh);
+        grid-template-rows: repeat(2, 10vh);
+        grid-gap: 10vh;
+      }
+    
 
+    }
 /* Key Frames */
 
-  }
+  
 
 
     #pawn1bottom {
