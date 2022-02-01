@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>CyberShogi 2022</title>
+  
+  <link rel = "shortcut icon" href = "ShogiKingIcon.svg">
+  
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+
+
+    
+  </script>
+  <script src = "index.js"></script>
+
+  <link rel = "stylesheet" href = "register.css">
+</head>
+<div class = "navbar">
+    <center><button class = "p"><p id = "clock"></p></button></center>
+</div>
+
+  <div class = "rowflex">
+  <div id = "iconcolumn">
+  <figure>
+    <a href = "">
+      <img src = "PixelShogiIcon.png" class="iconpic">
+      <figcaption class = "icons">Play Shogi</figcaption>
+    </a>
+  </figure>
+  <figure>
+    <a href = "">
+      <img src = "output-onlinepngtools.png" class="iconpic">
+      <figcaption class = "icons">Contact Us</figcaption>
+    </a>
+  </figure>
+  <figure>
+    <a href = "">
+      <img src = "Windows95ResourcesIcon.png" class="iconpic">
+      <figcaption class = "icons">Resources</figcaption>
+    </a>
+  </figure>
+  <figure >
+    <a href = "register.html">
+      <img src = "RegisterIcon.png" class="iconpic">
+      <figcaption class = "icons">Register</figcaption>
+    </a>
+  </figure>
+  </div>
+    <div id = "win95popup">
+      <div id = "win95popuptab">
+        <p>Welcome</p>
+        <button id = "close" style = "margin-top: -37px;">X</button>
+      </div>
+      <h1>Welcome to CyberShogi</h1>
+      <p class = "body">CyberShogi is a virtual shogi tournament that will be hosted on the 15th of March, 2022.</p>
+      <h1>Register</h1>
+      <form id="regform">
+        <label for="email">Email</label><br>
+        <input type="text" id="email" required><br>
+        <label for="password">Password</label><br>
+        <input type="text" id="password" required><br><br>
+        <input type="submit" value="Register">
+      </form>
+
+
+
+    </div>
+  </div>
+  <script defer type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js'
+    import { getDatabase, ref, onValue} from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js';
+    // Add Firebase products that you want to use
+    import { auth } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-auth-compat.js'
+    import { firestore } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore.js'
+  </script>
+  <script tpye=
+</body>
+</html>
