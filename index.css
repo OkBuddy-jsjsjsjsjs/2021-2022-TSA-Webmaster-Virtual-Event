@@ -181,6 +181,7 @@
     }
 
 #iconcolumn {
+  margin-top: 8vh;
   height: 20vh;
   width : auto;
   display: grid;
